@@ -1,10 +1,10 @@
-Package: GranaClassifier
-Title: Statistical support for the traceability research unit
-Version: 0.1.0
+Package: SHINYCARET
+Title: Shiny WebApp for Classification and Regression Tree
+Version: 0.0.1
 Authors@R: 
-  person("Ferdinand", "Ndongo", , "ferdinandbertrand.ndongo@fmach.it", role = c("aut", "cre"),
+  person("Ferdinand", "Ndongo", , "ferdyndongo.ndongo@gmail.com", role = c("aut", "cre"),
          comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package is inspired by the use of Shiny and CARET packages. It takes the potentiality of Shiny to make Classification and Regression Tree algorithms user friendly through a Web Application dashboard. 
 License: MIT + file LICENSE
 Depends: 
   R (>= 2.10)
