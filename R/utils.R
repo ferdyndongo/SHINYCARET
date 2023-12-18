@@ -19,7 +19,7 @@ dbtable <- function(src_name, schema_name, table_name){
 #' @param catVar the response variable
 rfeVar <- function(data, catVar){
   set.seed(1000)
-  rfProfile <- caret::rfe(x = numericDataset(data), y=factor(data[[catVar]]), 
+  rfProfile <- caret::rfe(x = numericDataset(data), y=factor(data[[catVar]]), size=2:ncol(numericDataset(data)),
                           rfeControl=caret::rfeControl(functions = caret::rfFuncs, method = "cv"))
   return(data %>% dplyr::select(dplyr::all_of(c(caret::predictors(rfProfile), catVar))))
 }
